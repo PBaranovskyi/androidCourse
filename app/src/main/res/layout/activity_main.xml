@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="module1.homework1.MainActivity">
+
+    <TextView
+        android:id="@+id/someId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:text="INCREMENT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:onClick="clickButton"
+        android:id="@+id/button"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fibonacheEditText"
+        android:layout_toEndOf="@+id/fibonacheEditText"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/fibonacheTextView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:layout_marginTop="48dp"
+        android:id="@+id/fibonacheEditText"
+        android:layout_below="@+id/editText"
+        android:layout_toEndOf="@+id/someId"
+        android:layout_marginStart="100dp"
+        android:width="100dp"/>
+
+    <TextView
+        android:text="Фибоначи"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fibonacheTextView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2" />
+
+
+</RelativeLayout>
